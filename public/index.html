@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiteboard App</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      /* Welcome screen gradient */
+      #welcome-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* Purple → Mauve */
+        color: #fff;
+        text-align: center;
+      }
+
+      #welcome-container input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 200px;
+        font-size: 16px;
+      }
+
+      #welcome-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        background-color: #ffffff;
+        color: #6a1b9a;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #whiteboard-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Welcome Page -->
+    <div id="welcome-container">
+      <h1>Welcome to the Collaborative Whiteboard</h1>
+      <input type="text" id="username-input" placeholder="Enter your name" />
+      <button onclick="enterWhiteboard()">Enter</button>
+    </div>
+
+    <!-- Whiteboard Page -->
+    <div id="whiteboard-container">
+      <div
+        id="username-display"
+        style="position: fixed; top: 10px; left: 10px; background: #fff; padding: 5px 10px; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.2);"
+      ></div>
+      <canvas id="canvas"></canvas>
+      <video
+        style="position: fixed; bottom: 0; left: 0"
+        id="test"
+        width="400"
+        height="300"
+        autoplay
+      ></video>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
