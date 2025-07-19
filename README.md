@@ -16,11 +16,15 @@ As part of my internship at **CODTECH IT SOLUTIONS**, I developed **CollabCanva*
 
 ---
 
+
 ## 🌐 Live Project
 
-| 🔗 Live Site                                            | 🖼️ Outcome |
-| ------------------------------------------------------- | ----------- |
-| [Click Here to Visit](https://collabcanva.onrender.com) | ![Welcome](https://raw.githubusercontent.com/Sornaharini/CollabCanva-/main/public/welcome.png) <br> ![Editor](https://raw.githubusercontent.com/Sornaharini/CollabCanva-/main/public/editor.png) |
+🔗 **Live Site**: [https://collabcanva.onrender.com](https://collabcanva.onrender.com)
+
+
+ ###🖼️ Outcome 
+
+ ![Welcome](https://raw.githubusercontent.com/Sornaharini/CollabCanva-/main/public/welcome.png) <br> ![Editor](https://raw.githubusercontent.com/Sornaharini/CollabCanva-/main/public/editor.png) |
 
 ---
 
